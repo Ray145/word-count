@@ -12,8 +12,8 @@ e.g. post json body
 		"processingType": "stream",       //to stream the download in case of huge files
 		"ignorePunctuation": true,        //if to ignore punctuation
 		"ignoreNumbers": true,            //if to ignore number
-        "sort": "occurences",             //sort by: occurences or key
-        "sortDirection": "desc"           //sort direction
+                "sort": "occurences",             //sort by: occurences or key
+                "sortDirection": "desc"           //sort direction
 	}
 }
 ```
