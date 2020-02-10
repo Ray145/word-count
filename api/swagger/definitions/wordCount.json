@@ -1,0 +1,70 @@
+{
+  "WordCountPayload": {
+    "type": "object",
+    "required": [
+      "url"
+    ],
+    "properties": {
+      "url": {
+        "type": "string"
+      },
+      "options": {
+        "type": "object",
+        "properties": {
+          "processingType": {
+            "type": "string"
+          },
+          "sort": {
+            "type": "string"
+          },
+          "sortDirection": {
+            "type": "string"
+          },
+          "ignorePunctuation": {
+            "type": "boolean"
+          },
+          "ignoreNumbers": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "WordCount": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string"
+      },
+      "options": {
+        "type": "object",
+        "properties": {
+          "processingType": {
+            "type": "string"
+          },
+          "sort": {
+            "type": "string"
+          },
+          "sortDirection": {
+            "type": "string"
+          },
+          "ignorePunctuation": {
+            "type": "boolean"
+          },
+          "ignoreNumbers": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "ArrayOfWordCounts": {
+    "type": "array",
+    "items": {
+      "$ref": "#/WordCount"
+    }
+  }
+}

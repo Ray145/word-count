@@ -1,0 +1,29 @@
+{
+  "PROCESS_WORD_COUNT": {
+    "x-swagger-router-controller": "WordCount",
+    "post": {
+      "operationId": "processWordCount",
+      "description": "Processes a word count URL",
+      "parameters": [
+        {
+          "in": "body",
+          "name": "wordCountPayload",
+          "schema": {
+            "$ref": "../definitions/wordCount.json#/WordCountPayload"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Success"
+        },
+        "default": {
+          "description": "Error",
+          "schema": {
+            "$ref": "../definitions/general.json#/ErrorResponse"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "app": {
+    "port": 3030,
+    "logLevel": "debug"
+  },
+  "mongo": {
+    "connString": "mongodb://localhost/word_count"
+  }
+}

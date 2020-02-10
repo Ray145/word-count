@@ -1,0 +1,32 @@
+{
+  "GeneralResponse": {
+    "type": "object",
+    "required": [
+      "success",
+      "message"
+    ],
+    "properties": {
+      "success": {
+        "type": "boolean"
+      },
+      "message": {
+        "type": "string"
+      }
+    }
+  },
+  "ErrorResponse": {
+    "type": "object",
+    "required": [
+      "success",
+      "err_message"
+    ],
+    "properties": {
+      "success": {
+        "type": "boolean"
+      },
+      "err_message": {
+        "type": "string"
+      }
+    }
+  }
+}

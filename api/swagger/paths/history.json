@@ -1,0 +1,43 @@
+{
+  "GET_WORD_COUNT_HISTORY": {
+    "x-swagger-router-controller": "History",
+    "get": {
+      "operationId": "getHistory",
+      "description": "Gets a list of layers",
+      "parameters": [
+        {
+          "in": "query",
+          "name": "sort",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "in": "query",
+          "name": "sortDirection",
+          "type": "string",
+          "required": false
+        },
+        {
+          "in": "query",
+          "name": "includeWordCounts",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Success",
+          "schema": {
+            "$ref": "../definitions/wordCount.json#/ArrayOfWordCounts"
+          }
+        },
+        "default": {
+          "description": "Error",
+          "schema": {
+            "$ref": "../definitions/general.json#/ErrorResponse"
+          }
+        }
+      }
+    }
+  }
+}

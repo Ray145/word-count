@@ -1,0 +1,11 @@
+{
+  "/swagger": {
+    "x-swagger-pipe": "swagger_raw"
+  },
+  "/word-count": {
+    "$ref": "./wordCount.json#/PROCESS_WORD_COUNT"
+  },
+  "/history": {
+    "$ref": "./history.json#/GET_WORD_COUNT_HISTORY"
+  }
+}
