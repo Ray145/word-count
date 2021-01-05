@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "config": "^3.2.5",
     "express": "^4.17.1",
     "json-schema-ref-parser": "^7.1.3",
